@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+body {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #f7f7f7;
+}
+.margen-interno {
+    padding: 0 5rem;
+}
+    .header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background: url(/assets/principal.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+        .menu {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            height: auto;
+            padding-bottom: 1rem;
+            border-bottom: .1rem solid #0002;
+            background-color: #0005;
+        }
+            .logo {
+                margin: 1rem -1rem 0 1rem;
+                flex: 1;
+            }
+                .logo a {
+                    font-size: 3rem;
+                    color: #fff;
+                }
+                .logo a:hover {
+                    color: #fffc;
+                }
+            .nav {
+                flex: 5;
+                margin-left: 3rem;
+                margin-right: 3rem;
+                padding-top: 2rem;
+            }
+                .nav a {
+                    padding: 0 1rem;
+                    letter-spacing: .2rem;
+                    text-transform: uppercase;
+                    font-size: 1.1rem;
+                    color: #fff;
+                }
+                .nav a:hover {
+                    color: #fffc;
+                }
+            .social {
+                display: flex;
+                flex: 1;
+                height: 30px;
+                padding-top: 2rem;
+                align-items: center;
+            }
+                .social a {
+                    font-size: 1.1rem;
+                    padding: 0 .5rem;
+                    color: #fff;
+                }
+                .social a.instagram:hover {
+                    background: linear-gradient(to right, #dd2a7b, #515bd4);
+                    background-clip: padding-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                .social a.facebook:hover {
+                    background: linear-gradient(to right, #3b5998, #6b89c9);
+                    background-clip: padding-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+        .texto-principal {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            height: 100vh;
+        }
+            h1 {
+                font-size: 1.5rem;
+                text-align: center;
+                padding-bottom: 5rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                color: #fffa;
+            }
+    .section {
+        display: flex;
+        background-color: #f7f7f7;
+    }
+        .articulos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex: 2;
+            background-color: #f7f7f7;
+        }
+            .article {
+                flex: 1 40%;
+                font-size: 1.3rem;
+                margin: 1rem 1rem 0 0;
+            }
+            .article img {
+                width: 100%;
+            }
+            .article a {
+                display: inline-block;
+                margin: 1rem 0;
+                padding: 1rem;
+                transition: .5s ease;
+                background: #000;
+                color: #fff;
+            }
+            .article a:hover {
+                transition: .5s ease;
+                color: #000;
+                background: #ccc;
+            }
+            h3 {
+                font-size: 1rem;
+                padding: 1rem 0;
+                margin-top: -9rem;
+                color: #fffc;
+            }
+            h2 {
+                font-size: 2rem;
+                text-transform: uppercase;
+                padding: 0 0 3.5rem 0;
+                color: #fffc;
+            }
+            .navegacion {
+                flex: 1 100%;
+                text-align: center;
+                margin: 1rem 1rem 0 0;
+                padding: .5rem 0 .5rem 0;
+                background-color: #000;
+            }
+            .navegacion a {
+                padding: 0 1rem;
+                font-size: 1.1rem;
+                text-decoration: uppercase;
+                color: #fff;
+            }
+            .navegacion a:hover {
+                color: #f7f7f7;
+            }
+        .aside {
+            flex: 1; 
+            margin: 1rem .5rem 1rem 0;
+        }
+        .aside img {
+            width: 100%;
+        }
+        h4 {
+            padding: 1rem;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #000;
+        }
+            .publicidad {
+                background-color: #f7f7f7;
+            }
+    .footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        background-color: #000;
+    }
+        .pie {
+            width: auto;
+        }
+        .pie a {
+            padding: .5rem 0 0 0;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+@media all and (max-width: 800px) {
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .aside {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 1236px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .3rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .logo {
+        margin-left: -1rem;
+    }
+}
+
+@media all and (max-width: 550px) {
+     h1 {
+        padding-left: 0rem;
+        padding-right: 0rem;
+     }
+}
+
